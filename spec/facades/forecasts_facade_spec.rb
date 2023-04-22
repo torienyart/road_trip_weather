@@ -4,7 +4,7 @@ require './spec/poros/helper'
 
 describe ForecastsFacade do
   describe "class methods" do
-    xit "can create a hash of city weather" do
+    it "can create a hash of city weather" do
       VCR.use_cassette("forcast_for_denver") do
         @forecasts_facade = ForecastsFacade.new({location: "denver, co"}).city_weather
       end
@@ -24,6 +24,7 @@ describe ForecastsFacade do
       expect(@latlng_facade).to be_a String
       expect(@latlng_facade).to eq("39.74001, -104.99202")
     end
+
 
     describe "city_weather_serializer" do
       it "can create a current weather object" do

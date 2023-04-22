@@ -1,7 +1,7 @@
 class CityWeatherSerializer
   def self.serialized_forecast(current_weather, daily_weather, hourly_weather) 
     forecast_hash = {data: {
-                       id: nil,
+                       id: "null",
                        type: "forecast",
                        attributes: {
                           current_weather: current_weather_hash(current_weather),
