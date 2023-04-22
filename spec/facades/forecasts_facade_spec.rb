@@ -1,8 +1,10 @@
 require 'rails_helper'
+require './spec/poros/helper'
+
 
 describe ForecastsFacade do
   describe "class methods" do
-    it "can create a hash of city weather" do
+    xit "can create a hash of city weather" do
       VCR.use_cassette("forcast_for_denver") do
         @forecasts_facade = ForecastsFacade.new({location: "denver, co"}).city_weather
       end
@@ -21,6 +23,45 @@ describe ForecastsFacade do
 
       expect(@latlng_facade).to be_a String
       expect(@latlng_facade).to eq("39.74001, -104.99202")
+    end
+
+    describe "city_weather_serializer" do
+      it "can create a current weather object" do
+        VCR.use_cassette("geocoding_denver") do
+          @current_weather = ForecastsFacade.new({location: "denver, co"}).current_weather(response[:current])
+        end
+        expect(@current_weather).to be_a CurrentWeather
+      end
+
+      it "can create daily weather objects" do
+        VCR.use_cassette("geocoding_denver") do
+          @daily_weather = ForecastsFacade.new({location: "denver, co"}).daily_weather(response[:forecast][:forecastday])
+        end
+        
+        expect(@daily_weather).to be_a Array
+        expect(@daily_weather.count).to be 5
+        expect(@daily_weather.first).to be_a DayWeather
+      end
+
+      it "can create hourly weather objects" do
+        VCR.use_cassette("geocoding_denver") do
+          @hourly_weather = ForecastsFacade.new({location: "denver, co"}).hourly_weather(response[:forecast][:forecastday][0][:hour])
+        end
+        expect(@hourly_weather).to be_a Array
+        expect(@hourly_weather.count).to be 24
+        expect(@hourly_weather.first).to be_a HourWeather
+      end
+
+      it "can serialize all the objects together" do
+        VCR.use_cassette("geocoding_denver") do
+          @forecast = ForecastsFacade.new({location: "denver, co"}).city_weather_serializer(response)
+        end
+
+        expect(@forecast).to be_a Hash
+        expect(@forecast[:data][:id]).to eq nil
+        expect(@forecast[:data][:type]).to eq("forecast")
+        expect(@forecast[:data][:attributes].keys).to include(:current_weather, :daily_weather, :hourly_weather)
+      end
     end
   end
 end

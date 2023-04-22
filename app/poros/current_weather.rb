@@ -17,6 +17,5 @@ class CurrentWeather
     @visibility = response_hash[:vis_miles]
     @condition = response_hash[:condition][:text]
     @icon = response_hash[:condition][:icon]
-
   end
 end

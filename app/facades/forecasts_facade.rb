@@ -5,7 +5,30 @@ class ForecastsFacade
 
   def city_weather
     response = WeatherService.location_weather(latlng_for_city)
-    CityForecast.new(response)
+    city_weather_serializer(response)
+  end
+
+  def city_weather_serializer(response)
+    c = current_weather(response[:current])
+    d = daily_weather(response[:forecast][:forecastday])
+    h = hourly_weather(response[:forecast][:forecastday][0][:hour])
+    CityWeatherSerializer.serialized_forecast(c, d, h)
+  end
+
+  def current_weather(response)
+    poro = CurrentWeather.new(response)
+  end
+
+  def daily_weather(forecastday)
+    poros = forecastday.map do |day_data|
+      DayWeather.new(day_data)
+    end
+  end
+
+  def hourly_weather(hourly_data)
+    poros = hourly_data.map do |hour_data|
+      HourWeather.new(hour_data)
+    end
   end
 
   def latlng_for_city
