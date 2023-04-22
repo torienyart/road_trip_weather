@@ -4,7 +4,8 @@ class ForecastsFacade
   end
 
   def city_weather
-    
+    response = WeatherService.location_weather(latlng_for_city)
+    CityForecast.new(response)
   end
 
   def latlng_for_city

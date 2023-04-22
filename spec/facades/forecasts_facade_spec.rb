@@ -2,9 +2,14 @@ require 'rails_helper'
 
 describe ForecastsFacade do
   describe "class methods" do
-    xit "can create a hash of city weather" do
-      VCR.use_cassette("forcast_for_denver")
-        @forecast_facade = ForecastFacade.new({location: "denver, co"}).city_weather
+    it "can create a hash of city weather" do
+      VCR.use_cassette("forcast_for_denver") do
+        @forecasts_facade = ForecastsFacade.new({location: "denver, co"}).city_weather
+      end
+
+      expect(@forecasts_facade).to be_a Hash
+      expect(@forecasts_facade[:data][:attributes]).to include(:current_weather, :daily_weather, :hourly_weather)    
+      expect(@forecasts_facade[:data][:attributes].keys.count).to eq(3)                                                  
     end
   end
 

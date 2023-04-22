@@ -17,19 +17,13 @@ describe 'Retrieve Weather for a city' do
       expect(response.status).to eq(200)
       expect(json[:data][:id]).to eq(null)
       expect(json[:data][:type]).to eq("forecast")
-      expect(json[:data][:attributes]).to include(:current_weather, :daily_weather, :hourly_weather)
-      
-      expect(json[:data][:attributes][:current_weather]).to include(:last_updated, 
-                                                                    :temperature, 
-                                                                    :feels_like, 
-                                                                    :humidity, 
-                                                                    :uvi, 
-                                                                    :visibilty, 
-                                                                    :condition, 
-                                                                    :icon)
+      expect(json[:data][:attributes]).to include(:current_weather, :daily_weather, :hourly_weather)    
+      expect(json[:data][:attributes].keys.count).to eq(3)                                                  
+
     end
 
     it "returns the current weather attributes" do
+      expect(json[:data][:attributes][:current_weather].keys.count).to eq(8)
       expect(json[:data][:attributes][:current_weather][:last_updated]).to eq(Time.now.strftime("%Y-%m-%d %H:%M"))
       expect(json[:data][:attributes][:current_weather][:temperature]).to be_a(Float)
       expect(json[:data][:attributes][:current_weather][:feels_like]).to be_a(Float)
@@ -41,6 +35,7 @@ describe 'Retrieve Weather for a city' do
     end
 
     it "returns the daily weather attributes" do
+      expect(json[:data][:attributes][:daily_weather].keys.count).to eq(7)
       expect(json[:data][:attributes][:daily_weather][:date]).to eq(Date.today.strftime("%Y-%m-%d"))
       expect(json[:data][:attributes][:daily_weather][:sunrise].strftime("%I:%M %p")).to eq(json[:data][:attributes][:daily_weather][:sunrise])
       expect(json[:data][:attributes][:daily_weather][:sunset].strftime("%I:%M %p")).to eq(json[:data][:attributes][:daily_weather][:sunset])
@@ -50,11 +45,14 @@ describe 'Retrieve Weather for a city' do
       expect(json[:data][:attributes][:daily_weather][:icon]).to be_a(String)
     end
 
-    it "returns the daily weather attributes" do
+    it "returns the hourly weather attributes" do
       expect(json[:data][:attributes][:hourly_weather]).to be_a(Array)
+      expect(json[:data][:attributes][:hourly_weather].count).to eq(24)
+
 
       hour_1 = json[:data][:attributes][:hourly_weather].first 
 
+      expect(hour_1.keys.count).to eq(4)
       expect(hour_1[:time]..strftime("%H:%M")).to eq(hour_1[:time])
       expect(hour_1[:temperature]).to be_a(Float)
       expect(hour_1[:condition]).to be_a(String)
