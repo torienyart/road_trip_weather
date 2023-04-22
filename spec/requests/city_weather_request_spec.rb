@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'Retrieve Weather for a city' do
-  describe "GET /api/v0/forecast?location=cincinatti,oh" do
+  describe "GET /api/v0/?location=cincinatti,oh" do
 
     before :each do
       VCR.use_cassette("cincinatti_weather_forecast") do

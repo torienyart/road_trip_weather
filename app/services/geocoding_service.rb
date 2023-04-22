@@ -1,5 +1,5 @@
 class GeocodingService
-  def self.latlong(city)
+  def self.latlng_for_city(city)
     get_url("/geocoding/v1/address?key=#{ENV['mapquest_api_key']}&location=#{city}")
   end
 
