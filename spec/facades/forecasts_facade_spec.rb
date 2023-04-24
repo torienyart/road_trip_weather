@@ -59,7 +59,7 @@ describe ForecastsFacade do
         end
 
         expect(@forecast).to be_a Hash
-        expect(@forecast[:data][:id]).to eq nil
+        expect(@forecast[:data][:id]).to eq "null"
         expect(@forecast[:data][:type]).to eq("forecast")
         expect(@forecast[:data][:attributes].keys).to include(:current_weather, :daily_weather, :hourly_weather)
       end
