@@ -7,6 +7,6 @@ describe MapService do
     end
 
     expect(@times).to be_a Hash
-    expect(@times[:time][1]).to be 16892
+    expect(@times[:time][1]).to be 16845
   end
 end

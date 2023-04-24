@@ -5,10 +5,7 @@ class MapService
       locations: [
         start,
         stop
-      ],
-      options: {
-        manyToOne: true
-      }
+      ]
     }.to_json
 
     response = conn.post do |req|
