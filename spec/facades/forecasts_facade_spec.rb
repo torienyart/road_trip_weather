@@ -29,14 +29,14 @@ describe ForecastsFacade do
     describe "city_weather_serializer" do
       it "can create a current weather object" do
         VCR.use_cassette("geocoding_denver") do
-          @current_weather = ForecastsFacade.new({location: "denver, co"}).current_weather(response[:current])
+          @current_weather = ForecastsFacade.new({location: "denver, co"}).current_weather(fake_response[:current])
         end
         expect(@current_weather).to be_a CurrentWeather
       end
 
       it "can create daily weather objects" do
         VCR.use_cassette("geocoding_denver") do
-          @daily_weather = ForecastsFacade.new({location: "denver, co"}).daily_weather(response[:forecast][:forecastday])
+          @daily_weather = ForecastsFacade.new({location: "denver, co"}).daily_weather(fake_response[:forecast][:forecastday])
         end
         
         expect(@daily_weather).to be_a Array
@@ -46,7 +46,7 @@ describe ForecastsFacade do
 
       it "can create hourly weather objects" do
         VCR.use_cassette("geocoding_denver") do
-          @hourly_weather = ForecastsFacade.new({location: "denver, co"}).hourly_weather(response[:forecast][:forecastday][0][:hour])
+          @hourly_weather = ForecastsFacade.new({location: "denver, co"}).hourly_weather(fake_response[:forecast][:forecastday][0][:hour])
         end
         expect(@hourly_weather).to be_a Array
         expect(@hourly_weather.count).to be 24
@@ -55,11 +55,11 @@ describe ForecastsFacade do
 
       it "can serialize all the objects together" do
         VCR.use_cassette("geocoding_denver") do
-          @forecast = ForecastsFacade.new({location: "denver, co"}).city_weather_serializer(response)
+          @forecast = ForecastsFacade.new({location: "denver, co"}).city_weather_serializer(fake_response)
         end
 
         expect(@forecast).to be_a Hash
-        expect(@forecast[:data][:id]).to eq nil
+        expect(@forecast[:data][:id]).to eq "null"
         expect(@forecast[:data][:type]).to eq("forecast")
         expect(@forecast[:data][:attributes].keys).to include(:current_weather, :daily_weather, :hourly_weather)
       end

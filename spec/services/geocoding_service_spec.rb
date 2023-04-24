@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe GeocodingService do
   it "returns a lattitude and longitude based on city and state" do
-    VCR.use_cassette("geocoding_denver") do
+    VCR.use_cassette("geocoding_denver_2") do
       @latlong = GeocodingService.latlng_for_city("denver,co")
     end
 
