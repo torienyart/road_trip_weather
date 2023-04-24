@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe WeatherService do
   it "returns a large nested hash" do
-    VCR.use_cassette("forecast_denver") do
+    VCR.use_cassette("forecast_denver_2") do
       @forecast = WeatherService.location_weather("39.74001, -104.99202")
     end
 
