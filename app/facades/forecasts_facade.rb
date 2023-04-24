@@ -3,9 +3,13 @@ class ForecastsFacade
     @city = params[:location]
   end
 
-  def city_weather
+  def city_weather_response
     response = WeatherService.location_weather(latlng_for_city)
-    city_weather_serializer(response)
+  end
+
+  def city_weather
+    # response = WeatherService.location_weather(latlng_for_city)
+    city_weather_serializer(city_weather_response)
   end
 
   def city_weather_serializer(response)
