@@ -32,7 +32,7 @@ describe SalariesFacade do
     VCR.use_cassette("salary_forecast_chicago") do
       @forecast = @facade.serialized_destination_salaries
     end
-    require 'pry'; binding.pry
+    
     expect(@forecast).to be_a Hash
     expect(@forecast[:data].keys).to include(:id, :type, :attributes)
     expect(@forecast[:data][:attributes]).to include(:destination, :forecast, :salaries)
