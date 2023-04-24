@@ -5,6 +5,10 @@ class SalariesFacade
     @destination = params[:destination]
   end
 
+  def serialized_destination_salaries
+    SalariesSerializer.serialized_destination_info(@destination, destination_salaries, destination_forecast)
+  end
+
   def destination_salaries
     response = TeleportService.destination_salaries(@destination)
     poros = response[:salaries].map do |salary_info|
@@ -20,6 +24,9 @@ class SalariesFacade
   end
 
   def destination_forecast
-    
+    params = {}
+    params[:location] = @destination
+    facade = ForecastsFacade.new(params)
+    facade.current_weather(facade.city_weather_response[:current])
   end
 end

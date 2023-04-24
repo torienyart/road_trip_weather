@@ -25,6 +25,16 @@ describe SalariesFacade do
       @forecast = @facade.destination_forecast
     end
 
-    expect(@forecast).to be_a(DestinationForecast)
+    expect(@forecast).to be_a(CurrentWeather)
+  end
+
+  it "can serialize the forecast and salary information together" do
+    VCR.use_cassette("salary_forecast_chicago") do
+      @forecast = @facade.serialized_destination_salaries
+    end
+    require 'pry'; binding.pry
+    expect(@forecast).to be_a Hash
+    expect(@forecast[:data].keys).to include(:id, :type, :attributes)
+    expect(@forecast[:data][:attributes]).to include(:destination, :forecast, :salaries)
   end
 end
