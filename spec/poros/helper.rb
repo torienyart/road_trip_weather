@@ -1,4 +1,4 @@
-def response 
+def fake_response 
   {
   "location": {
       "name": "Denver",

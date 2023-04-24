@@ -3,7 +3,7 @@ require './spec/poros/helper'
 
 describe CurrentWeather do
   it "can create an object w/ correct attributes from incoming JSON" do
-    current_weather = CurrentWeather.new(response[:current])
+    current_weather = CurrentWeather.new(fake_response[:current])
     expect(current_weather).to be_instance_of(CurrentWeather)
     expect(current_weather.condition).to be_a(String)
     expect(current_weather.feels_like).to be_a(Float)
