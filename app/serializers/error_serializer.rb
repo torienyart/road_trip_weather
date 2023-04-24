@@ -10,4 +10,12 @@ class ErrorSerializer
   def self.bad_request
     {errors: "Bad request, please check your location information and try again"}
   end
+
+  def self.incorrect_password
+    {errors: "Username and password are incorrect"}
+  end
+
+  def self.user_not_found
+    {errors: "User does not exist, please register"}
+  end
 end
