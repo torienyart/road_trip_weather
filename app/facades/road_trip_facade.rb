@@ -5,15 +5,25 @@ class RoadTripFacade
   end
 
   def trip_info
-    TripInfoSerializer.trip_info_hash(@start_city, @end_city, formatted_travel_time, eta_weather_info)
+    TripInfoSerializer.trip_info_hash(@start_city, @end_city, travel_time, eta_weather_info)
   end
 
-  def travel_time
+  def travel_time_in_seconds
     response = MapService.travel_time(@start_city, @end_city)
     response[:time][1]
   end
 
-  def formatted_travel_time
+  def travel_time
+    response = MapService.travel_time(@start_city, @end_city)
+
+    if travel_time_in_seconds == 0
+      "impossible route"
+    else
+      formatted_travel_time(travel_time_in_seconds)
+    end
+  end
+
+  def formatted_travel_time(travel_time)
     seconds = travel_time
     hours = seconds / 3600
     seconds %= 3600
@@ -23,7 +33,7 @@ class RoadTripFacade
   end
 
   def eta_weather_info
-    estimated_arrival_time = Time.now + travel_time
+    estimated_arrival_time = Time.now + travel_time_in_seconds
     params = {}
     params[:location] = @end_city
     day_index = estimated_arrival_time.day - Time.now.day
