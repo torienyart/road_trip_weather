@@ -1,4 +1,6 @@
 class CityWeatherSerializer
+  include FastJsonapi::ObjectSerializer
+  # attributes :current_weather, :day_weather, :hour_weather
   def self.serialized_forecast(current_weather, daily_weather, hourly_weather) 
     forecast_hash = {data: {
                        id: "null",

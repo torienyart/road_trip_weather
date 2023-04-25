@@ -10,7 +10,6 @@ class TripInfoSerializer
         weather_at_eta: weather_info_hash(weather_info)
       }
     }
-
     }
   end
 

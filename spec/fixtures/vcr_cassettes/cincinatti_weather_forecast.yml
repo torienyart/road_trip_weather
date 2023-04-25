@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:09:42 GMT
+      - Tue, 25 Apr 2023 16:20:19 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,17 +29,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14638'
+      - '14520'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14638'
+      - '14520'
       Ratelimit-Reset:
-      - '2112618'
+      - '2108381'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 34abcbb0-e37b-11ed-b258-fd743e58744d
+      - 12216f50-e385-11ed-b258-fd743e58744d
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -50,7 +50,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJjaW5jaW5hdHRpLG9oIn0sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkNpbmNpbm5hdGkiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiSGFtaWx0b24iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJPSCIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQlgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6MzkuMTA3MTMsImxuZyI6LTg0LjUwNDEzfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5LjEwNzEzLCJsbmciOi04NC41MDQxM30sIm1hcFVybCI6IiJ9XX1dfQ==
-  recorded_at: Tue, 25 Apr 2023 15:09:42 GMT
+  recorded_at: Tue, 25 Apr 2023 16:20:19 GMT
 - request:
     method: get
     uri: https://api.weatherapi.com/v1/forecast.json?alerts=no&aqi=no&days=5&key=weather_api_key&q=39.10713,%20-84.50413
@@ -70,7 +70,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:09:42 GMT
+      - Tue, 25 Apr 2023 16:20:19 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -80,7 +80,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-1068
+      - BunnyCDN-IL1-1070
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -96,21 +96,22 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - 04/25/2023 15:09:42
+      - 04/25/2023 16:20:19
       Cdn-Edgestorageid:
       - '1068'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - bba6c20f7b26d96b50a5170c49aaf53d
+      - ae2bd0c8cc9c95c5becf903a9615018a
       Cdn-Cache:
       - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"Newport","region":"Kentucky","country":"United
-        States of America","lat":39.11,"lon":-84.5,"tz_id":"America/New_York","localtime_epoch":1682435382,"localtime":"2023-04-25
-        11:09"},"current":{"last_updated_epoch":1682434800,"last_updated":"2023-04-25
-        11:00","temp_c":7.2,"temp_f":45.0,"is_day":1,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":5.6,"wind_kph":9.0,"wind_degree":200,"wind_dir":"SSW","pressure_mb":1023.0,"pressure_in":30.22,"precip_mm":0.0,"precip_in":0.0,"humidity":63,"cloud":50,"feelslike_c":5.5,"feelslike_f":41.9,"vis_km":16.0,"vis_miles":9.0,"uv":3.0,"gust_mph":6.5,"gust_kph":10.4},"forecast":{"forecastday":[{"date":"2023-04-25","date_epoch":1682380800,"day":{"maxtemp_c":16.0,"maxtemp_f":60.8,"mintemp_c":0.4,"mintemp_f":32.7,"avgtemp_c":7.8,"avgtemp_f":46.1,"maxwind_mph":8.5,"maxwind_kph":13.7,"totalprecip_mm":0.0,"totalprecip_in":0.0,"totalsnow_cm":0.0,"avgvis_km":10.0,"avgvis_miles":6.0,"avghumidity":61.0,"daily_will_it_rain":0,"daily_chance_of_rain":0,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Partly
+        States of America","lat":39.11,"lon":-84.5,"tz_id":"America/New_York","localtime_epoch":1682439619,"localtime":"2023-04-25
+        12:20"},"current":{"last_updated_epoch":1682439300,"last_updated":"2023-04-25
+        12:15","temp_c":10.0,"temp_f":50.0,"is_day":1,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":2.2,"wind_kph":3.6,"wind_degree":10,"wind_dir":"N","pressure_mb":1023.0,"pressure_in":30.22,"precip_mm":0.0,"precip_in":0.0,"humidity":50,"cloud":50,"feelslike_c":8.9,"feelslike_f":48.0,"vis_km":16.0,"vis_miles":9.0,"uv":4.0,"gust_mph":6.3,"gust_kph":10.1},"forecast":{"forecastday":[{"date":"2023-04-25","date_epoch":1682380800,"day":{"maxtemp_c":16.0,"maxtemp_f":60.8,"mintemp_c":0.4,"mintemp_f":32.7,"avgtemp_c":7.8,"avgtemp_f":46.1,"maxwind_mph":8.5,"maxwind_kph":13.7,"totalprecip_mm":0.0,"totalprecip_in":0.0,"totalsnow_cm":0.0,"avgvis_km":10.0,"avgvis_miles":6.0,"avghumidity":61.0,"daily_will_it_rain":0,"daily_chance_of_rain":0,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Partly
         cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"uv":3.0},"astro":{"sunrise":"06:47
         AM","sunset":"08:24 PM","moonrise":"10:28 AM","moonset":"01:32 AM","moon_phase":"Waxing
         Crescent","moon_illumination":"24"},"hour":[{"time_epoch":1682395200,"time":"2023-04-25
@@ -268,5 +269,56 @@ http_interactions:
         22:00","temp_c":14.3,"temp_f":57.7,"is_day":0,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/119.png","code":1006},"wind_mph":6.5,"wind_kph":10.4,"wind_degree":96,"wind_dir":"E","pressure_mb":1004.0,"pressure_in":29.65,"precip_mm":0.2,"precip_in":0.01,"humidity":88,"cloud":58,"feelslike_c":13.6,"feelslike_f":56.5,"windchill_c":13.6,"windchill_f":56.5,"heatindex_c":14.3,"heatindex_f":57.7,"dewpoint_c":12.2,"dewpoint_f":54.0,"will_it_rain":0,"chance_of_rain":38,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":12.3,"gust_kph":19.8,"uv":1.0},{"time_epoch":1682823600,"time":"2023-04-29
         23:00","temp_c":13.6,"temp_f":56.5,"is_day":0,"condition":{"text":"Light rain
         shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png","code":1240},"wind_mph":7.8,"wind_kph":12.6,"wind_degree":99,"wind_dir":"E","pressure_mb":1003.0,"pressure_in":29.63,"precip_mm":0.3,"precip_in":0.01,"humidity":91,"cloud":54,"feelslike_c":12.6,"feelslike_f":54.7,"windchill_c":12.6,"windchill_f":54.7,"heatindex_c":13.6,"heatindex_f":56.5,"dewpoint_c":12.1,"dewpoint_f":53.8,"will_it_rain":0,"chance_of_rain":57,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":15.2,"gust_kph":24.5,"uv":1.0}]}]}}'
-  recorded_at: Tue, 25 Apr 2023 15:09:43 GMT
+  recorded_at: Tue, 25 Apr 2023 16:20:19 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=mapquest_api_key&location=cincinatti,oh
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 25 Apr 2023 16:20:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '805'
+      Connection:
+      - keep-alive
+      X-Ratelimit-Limit-2628000:
+      - '15000'
+      X-Ratelimit-Remaining-2628000:
+      - '14519'
+      Ratelimit-Limit:
+      - '15000'
+      Ratelimit-Remaining:
+      - '14519'
+      Ratelimit-Reset:
+      - '2108376'
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 14e65bb0-e385-11ed-b258-fd743e58744d
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=1,geocoding=1
+      Etag:
+      - W/"325-LXL9ceFexuDimsu75FNhO1D+dm8"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJjaW5jaW5hdHRpLG9oIn0sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkNpbmNpbm5hdGkiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiSGFtaWx0b24iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJPSCIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQlgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6MzkuMTA3MTMsImxuZyI6LTg0LjUwNDEzfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5LjEwNzEzLCJsbmciOi04NC41MDQxM30sIm1hcFVybCI6IiJ9XX1dfQ==
+  recorded_at: Tue, 25 Apr 2023 16:20:24 GMT
 recorded_with: VCR 6.1.0

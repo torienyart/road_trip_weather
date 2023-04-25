@@ -5,7 +5,7 @@ class RoadTripFacade
   end
 
   def trip_info
-    TripInfoSerializer.trip_info_hash(@start_city, @end_city, travel_time, eta_weather_info)
+    TripInfoSerializer.new(@start_city, @end_city, travel_time, eta_weather_info)
   end
 
   def travel_time_in_seconds

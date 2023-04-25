@@ -5,29 +5,49 @@ class ForecastsFacade
 
   def city_weather
     response = WeatherService.location_weather(latlng_for_city)
-    city_weather_serializer(response)
-  end
-
-  def city_weather_serializer(response)
-    c = current_weather(response)
-    d = daily_weather(response)
-    h = hourly_weather(response)
-    CityWeatherSerializer.serialized_forecast(c, d, h)
+    info_hash = {
+      current_weather:  current_weather(response[:current]),
+      daily_weather: daily_weather(response),
+      hourly_weather: hourly_weather(response)
+    }
+    Forecast.new(info_hash)
   end
 
   def current_weather(response)
-    poro = CurrentWeather.new(response[:current])
+    {
+    last_updated: response[:last_updated],
+    temperature: response[:temp_f],
+    feels_like: response[:feelslike_f],
+    humidity: response[:humidity],
+    uvi: response[:uv],
+    visibility: response[:vis_miles],
+    condition: response[:condition][:text],
+    icon: response[:condition][:icon]
+    }
   end
 
-  def daily_weather(forecastday)
-    poros = forecastday[:forecast][:forecastday].map do |day_data|
-      DayWeather.new(day_data)
+  def daily_weather(response)
+    response[:forecast][:forecastday].map do |day_data|
+      {
+      date: day_data[:date],
+      sunrise: day_data[:astro][:sunrise],
+      sunset: day_data[:astro][:sunset],
+      max_temp: day_data[:day][:maxtemp_f],
+      min_temp: day_data[:day][:mintemp_f],
+      condition: day_data[:day][:condition][:text],
+      icon: day_data[:day][:condition][:icon]
+      }
     end
   end
 
-  def hourly_weather(hourly_data)
-    poros = hourly_data[:forecast][:forecastday][0][:hour].map do |hour_data|
-      HourWeather.new(hour_data)
+  def hourly_weather(response)
+    response[:forecast][:forecastday][0][:hour].map do |hour_data|
+      {
+      time: hour_data[:time],
+      temperature: hour_data[:temp_f],
+      condition: hour_data[:condition][:text],
+      icon: hour_data[:condition][:icon]
+    }
     end
   end
 

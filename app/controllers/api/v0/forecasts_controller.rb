@@ -2,6 +2,8 @@ class Api::V0::ForecastsController < ApplicationController
   def city_weather
     if params[:location]
       @facade = ForecastsFacade.new(params).city_weather
+      require 'pry'; binding.pry
+      ForecastSerializer.new(@facade)
       render json: @facade, status: 200
     else
       render json: ErrorSerializer.bad_request, status: 400
