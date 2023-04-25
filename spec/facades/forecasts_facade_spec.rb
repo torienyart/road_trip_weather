@@ -53,9 +53,9 @@ describe ForecastsFacade do
         expect(@hourly_weather.first).to be_a HourWeather
       end
 
-      it "can create another day's hourly weather objects" do
+      it "can create eta hourly weather objects" do
         VCR.use_cassette("geocoding_denver") do
-          @hourly_weather = ForecastsFacade.new({location: "denver, co"}).another_day_hourly_weather(fake_response, 2)
+          @hourly_weather = ForecastsFacade.new({location: "denver, co"}).eta_hourly_weather(fake_response, 2)
         end
         expect(@hourly_weather).to be_a Array
         expect(@hourly_weather.count).to be 24

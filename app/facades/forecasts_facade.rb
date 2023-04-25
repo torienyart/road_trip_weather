@@ -31,7 +31,7 @@ class ForecastsFacade
     end
   end
 
-  def another_day_hourly_weather(hourly_data, day_index)
+  def eta_hourly_weather(hourly_data, day_index)
     poros = hourly_data[:forecast][:forecastday][day_index][:hour].map do |hour_data|
       HourWeather.new(hour_data)
     end
