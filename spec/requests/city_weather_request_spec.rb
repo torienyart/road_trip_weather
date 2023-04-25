@@ -15,7 +15,7 @@ describe 'Retrieve Weather for a city' do
 
     it "returns a nested hash" do
       expect(response.status).to eq(200)
-      expect(@json[:data][:id]).to eq("null")
+      expect(@json[:data][:id]).to eq(nil)
       expect(@json[:data][:type]).to eq("forecast")
       expect(@json[:data][:attributes]).to include(:current_weather, :daily_weather, :hourly_weather)    
       expect(@json[:data][:attributes].keys.count).to eq(3)                                                  

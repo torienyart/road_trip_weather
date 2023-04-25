@@ -51,10 +51,17 @@ class ForecastsFacade
     end
   end
 
-  def eta_hourly_weather(hourly_data, day_index)
-    poros = hourly_data[:forecast][:forecastday][day_index][:hour].map do |hour_data|
-      HourWeather.new(hour_data)
+  def eta_hourly_weather(response, day_index)
+    response[:forecast][:forecastday][day_index][:hour].map do |hour_data|
+      {
+      datetime: hour_data[:time],
+      temperature: hour_data[:temp_f],
+      condition: hour_data[:condition][:text],
+      }
     end
+    #poros = hourly_data[:forecast][:forecastday][day_index][:hour].map do |hour_data|
+    #   HourWeather.new(hour_data)
+    # end
   end
 
   def latlng_for_city
