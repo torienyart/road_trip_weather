@@ -28,6 +28,12 @@ describe 'a user can' do
         "destination": "London,UK",
         "api_key": @user.api_key
       }
+
+      @params_5 = {
+        "origin": "New York,NY",
+        "destination": "London,UK",
+        "api_key": 'beepboopbop'
+      }
     end
 
     it "can return the correct road trip information for a valid trip" do
@@ -80,5 +86,17 @@ describe 'a user can' do
       expect(json[:data][:attributes][:end_city]).to eq("London,UK")
       expect(json[:data][:attributes][:travel_time]).to eq("impossible route")      
     end
+
+    it "can return an error message if the api key is invalid" do
+      VCR.use_cassette('invalid_key') do
+        post '/api/v0/road_trip', params: @params_5
+      end
+
+      json = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response.status).to eq 401
+      expect(json[:errors]).to eq("Invalid API Key")
+    end
   end
+
 end
