@@ -68,6 +68,7 @@ RSpec.configure do |config|
     config.filter_sensitive_data('mapquest_api_key') { ENV['mapquest_api_key'] }
     config.filter_sensitive_data('weather_api_key') { ENV['weather_api_key'] }
     config.configure_rspec_metadata!
+    config.default_cassette_options = { re_record_interval: 1.days }
   end
 
   Shoulda::Matchers.configure do |config|
