@@ -15,10 +15,14 @@ class TripInfoSerializer
   end
 
   def self.weather_info_hash(weather_info)
-    {
-      datetime: weather_info.time,
-      temperature: weather_info.temperature,
-      condition: weather_info.condition
-    }
+    if weather_info != {}
+      {
+        datetime: weather_info.time,
+        temperature: weather_info.temperature,
+        condition: weather_info.condition
+      }
+    else
+      weather_info
+    end
   end
 end

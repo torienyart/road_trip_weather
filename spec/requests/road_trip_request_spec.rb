@@ -75,10 +75,10 @@ describe 'a user can' do
       expect(json[:data][:type]).to eq("road_trip")
       expect(json[:data][:attributes]).to include(:start_city, :end_city, :travel_time, :weather_at_eta)  
       expect(json[:data][:attributes].keys.count).to eq(4)         
-      expect(json[:data][:attributes][:weather_at_eta].keys).to eq({})
+      expect(json[:data][:attributes][:weather_at_eta]).to eq({})
       expect(json[:data][:attributes][:start_city]).to eq("New York,NY")
-      expect(json[:data][:attributes][:end_city]).to eq("Los Angeles,CA")
-      expect(json[:data][:attributes][:travel_time]).to eq("Impossible Route")      
+      expect(json[:data][:attributes][:end_city]).to eq("London,UK")
+      expect(json[:data][:attributes][:travel_time]).to eq("impossible route")      
     end
   end
 end

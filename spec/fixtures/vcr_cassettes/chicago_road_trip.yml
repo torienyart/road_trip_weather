@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:04:54 GMT
+      - Tue, 25 Apr 2023 15:09:32 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -31,17 +31,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14763'
+      - '14684'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14763'
+      - '14684'
       Ratelimit-Reset:
-      - '2112906'
+      - '2112628'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 88e94e60-e37a-11ed-9d80-87f90737737a
+      - 2e92ab40-e37b-11ed-9d80-87f90737737a
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -52,7 +52,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDE2ODQ1XSwiZGlzdGFuY2UiOlswLDI5Ni4yODQ3XSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQ2luY2lubmF0aSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJIYW1pbHRvbiIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6Ik9IIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhCWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS4xMDcxMywibG5nIjotODQuNTA0MTN9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzkuMTA3MTMsImxuZyI6LTg0LjUwNDEzfSwibWFwVXJsIjoiIn0seyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQ2hpY2FnbyIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJDb29rIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiSUwiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjQxLjg4NDI1LCJsbmciOi04Ny42MzI0NX0sImRpc3BsYXlMYXRMbmciOnsibGF0Ijo0MS44ODQyNSwibG5nIjotODcuNjMyNDV9LCJtYXBVcmwiOiIifV19
-  recorded_at: Tue, 25 Apr 2023 15:04:54 GMT
+  recorded_at: Tue, 25 Apr 2023 15:09:32 GMT
 - request:
     method: post
     uri: https://www.mapquestapi.com/directions/v2/routeMatrix?key=mapquest_api_key
@@ -74,7 +74,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:04:55 GMT
+      - Tue, 25 Apr 2023 15:09:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -84,17 +84,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14756'
+      - '14679'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14756'
+      - '14679'
       Ratelimit-Reset:
-      - '2112905'
+      - '2112627'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 895e3040-e37a-11ed-b817-6d74f0015ecb
+      - 2f196770-e37b-11ed-b817-6d74f0015ecb
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -105,7 +105,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDE2ODQ1XSwiZGlzdGFuY2UiOlswLDI5Ni4yODQ3XSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQ2luY2lubmF0aSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJIYW1pbHRvbiIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6Ik9IIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhCWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS4xMDcxMywibG5nIjotODQuNTA0MTN9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzkuMTA3MTMsImxuZyI6LTg0LjUwNDEzfSwibWFwVXJsIjoiIn0seyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQ2hpY2FnbyIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJDb29rIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiSUwiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjQxLjg4NDI1LCJsbmciOi04Ny42MzI0NX0sImRpc3BsYXlMYXRMbmciOnsibGF0Ijo0MS44ODQyNSwibG5nIjotODcuNjMyNDV9LCJtYXBVcmwiOiIifV19
-  recorded_at: Tue, 25 Apr 2023 15:04:55 GMT
+  recorded_at: Tue, 25 Apr 2023 15:09:33 GMT
 - request:
     method: post
     uri: https://www.mapquestapi.com/directions/v2/routeMatrix?key=mapquest_api_key
@@ -127,7 +127,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:04:56 GMT
+      - Tue, 25 Apr 2023 15:09:34 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -137,17 +137,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14755'
+      - '14672'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14755'
+      - '14672'
       Ratelimit-Reset:
-      - '2112904'
+      - '2112626'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 89e00a70-e37a-11ed-93f2-f58bd665ccb0
+      - 2f96adc0-e37b-11ed-9d80-87f90737737a
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -158,5 +158,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDE2ODQ1XSwiZGlzdGFuY2UiOlswLDI5Ni4yODQ3XSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQ2luY2lubmF0aSIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJIYW1pbHRvbiIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6Ik9IIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhCWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS4xMDcxMywibG5nIjotODQuNTA0MTN9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzkuMTA3MTMsImxuZyI6LTg0LjUwNDEzfSwibWFwVXJsIjoiIn0seyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiQ2hpY2FnbyIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJDb29rIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiSUwiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjQxLjg4NDI1LCJsbmciOi04Ny42MzI0NX0sImRpc3BsYXlMYXRMbmciOnsibGF0Ijo0MS44ODQyNSwibG5nIjotODcuNjMyNDV9LCJtYXBVcmwiOiIifV19
-  recorded_at: Tue, 25 Apr 2023 15:04:56 GMT
+  recorded_at: Tue, 25 Apr 2023 15:09:34 GMT
 recorded_with: VCR 6.1.0

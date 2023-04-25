@@ -33,13 +33,17 @@ class RoadTripFacade
   end
 
   def eta_weather_info
-    estimated_arrival_time = Time.now + travel_time_in_seconds
-    params = {}
-    params[:location] = @end_city
-    day_index = estimated_arrival_time.day - Time.now.day
-    forecast_array = ForecastsFacade.new(params).eta_hourly_weather(location_latlng, day_index)
-    forecast_array.find do |hour_weather|
-      hour_weather.time == estimated_arrival_time.strftime("%Y-%m-%d %H:00")
+    if travel_time == "impossible route"
+      {}
+    else
+      estimated_arrival_time = Time.now + travel_time_in_seconds
+      params = {}
+      params[:location] = @end_city
+      day_index = estimated_arrival_time.day - Time.now.day
+      forecast_array = ForecastsFacade.new(params).eta_hourly_weather(location_latlng, day_index)
+      forecast_array.find do |hour_weather|
+        hour_weather.time == estimated_arrival_time.strftime("%Y-%m-%d %H:00")
+      end
     end
   end
 

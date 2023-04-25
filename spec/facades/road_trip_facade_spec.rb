@@ -24,6 +24,26 @@ describe RoadTripFacade do
       expect(@facade).to eq("04:40:45")
     end
 
+    it "#impossible_travel_time" do
+      params = {origin: "New York,NY", destination: "London,UK", api_key: "t1h2i3s4_i5s6_l7e8g9i10t11", controller: "api/v0/road_trip", action: "create"}
+
+      VCR.use_cassette("impossible_road_trip") do
+        @facade = RoadTripFacade.new(params).travel_time
+      end
+
+      expect(@facade).to eq("impossible route")
+    end
+
+    it "#travel_time_in_seconds" do
+      params = {origin: "Cincinatti,OH", destination: "Chicago,IL", api_key: "t1h2i3s4_i5s6_l7e8g9i10t11", controller: "api/v0/road_trip", action: "create"}
+
+      VCR.use_cassette("chicago_road_trip") do
+        @facade = RoadTripFacade.new(params).travel_time_in_seconds
+      end
+
+      expect(@facade).to eq(16845)
+    end
+
     it "#eta_weather_info #weather_later_today" do
       params = {origin: "Cincinatti,OH", destination: "Chicago,IL", api_key: "t1h2i3s4_i5s6_l7e8g9i10t11", controller: "api/v0/road_trip", action: "create"}
 
