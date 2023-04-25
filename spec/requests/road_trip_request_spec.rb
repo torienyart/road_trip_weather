@@ -37,7 +37,7 @@ describe 'a user can' do
       json = JSON.parse(response.body, symbolize_names: true)
 
       expect(@response.status).to eq 200
-      expect(json[:data][:id]).to eq("null")
+      expect(json[:data][:id]).to eq(nil)
       expect(json[:data][:type]).to eq("road_trip")
       expect(json[:data][:attributes]).to include(:start_city, :end_city, :travel_time, :weather_at_eta)  
       expect(json[:data][:attributes].keys.count).to eq(4)         
@@ -54,7 +54,7 @@ describe 'a user can' do
       json = JSON.parse(response.body, symbolize_names: true)
 
       expect(@response.status).to eq 200
-      expect(json[:data][:id]).to eq("null")
+      expect(json[:data][:id]).to eq(nil)
       expect(json[:data][:type]).to eq("road_trip")
       expect(json[:data][:attributes]).to include(:start_city, :end_city, :travel_time, :weather_at_eta)  
       expect(json[:data][:attributes].keys.count).to eq(4)         
@@ -69,9 +69,9 @@ describe 'a user can' do
         post '/api/v0/road_trip', params: @params_4
       end
       json = JSON.parse(response.body, symbolize_names: true)
-
+      
       expect(@response.status).to eq 200
-      expect(json[:data][:id]).to eq("null")
+      expect(json[:data][:id]).to eq(nil)
       expect(json[:data][:type]).to eq("road_trip")
       expect(json[:data][:attributes]).to include(:start_city, :end_city, :travel_time, :weather_at_eta)  
       expect(json[:data][:attributes].keys.count).to eq(4)         

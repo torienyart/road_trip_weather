@@ -5,7 +5,13 @@ class RoadTripFacade
   end
 
   def trip_info
-    TripInfoSerializer.trip_info_hash(@start_city, @end_city, travel_time, eta_weather_info)
+    info_hash = {
+      start_city: @start_city,
+      end_city: @end_city,
+      travel_time: travel_time,
+      weather_at_eta: eta_weather_info
+    }
+    RoadTrip.new(info_hash)
   end
 
   def travel_time_in_seconds
@@ -14,8 +20,6 @@ class RoadTripFacade
   end
 
   def travel_time
-    response = MapService.travel_time(@start_city, @end_city)
-
     if travel_time_in_seconds == 0
       "impossible route"
     else
@@ -42,7 +46,7 @@ class RoadTripFacade
       day_index = estimated_arrival_time.day - Time.now.day
       forecast_array = ForecastsFacade.new(params).eta_hourly_weather(location_latlng, day_index)
       forecast_array.find do |hour_weather|
-        hour_weather.time == estimated_arrival_time.strftime("%Y-%m-%d %H:00")
+        hour_weather[:datetime] == estimated_arrival_time.strftime("%Y-%m-%d %H:00")
       end
     end
   end

@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:09:38 GMT
+      - Tue, 25 Apr 2023 16:58:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -31,17 +31,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14648'
+      - '14377'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14648'
+      - '14377'
       Ratelimit-Reset:
-      - '2112622'
+      - '2106110'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 323833a0-e37b-11ed-93f2-f58bd665ccb0
+      - 5b55b910-e38a-11ed-93f2-f58bd665ccb0
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -52,7 +52,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDEzNDQ5MV0sImRpc3RhbmNlIjpbMCwyNTk3LjE0MDJdLCJsb2NhdGlvbnMiOlt7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJTYW4gRGllZ28iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiU2FuIERpZWdvIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiQ0EiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjMyLjcxNTY4LCJsbmciOi0xMTcuMTYxNzF9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzIuNzE1NjgsImxuZyI6LTExNy4xNjE3MX0sIm1hcFVybCI6IiJ9LHsic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkJ1ZmZhbG8iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiRXJpZSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6Ik5ZIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0Ijo0Mi44ODU0NSwibG5nIjotNzguODc4NDZ9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDIuODg1NDUsImxuZyI6LTc4Ljg3ODQ2fSwibWFwVXJsIjoiIn1dfQ==
-  recorded_at: Tue, 25 Apr 2023 15:09:38 GMT
+  recorded_at: Tue, 25 Apr 2023 16:58:10 GMT
 - request:
     method: post
     uri: https://www.mapquestapi.com/directions/v2/routeMatrix?key=mapquest_api_key
@@ -74,7 +74,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:09:39 GMT
+      - Tue, 25 Apr 2023 16:58:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -84,17 +84,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14651'
+      - '14369'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14651'
+      - '14369'
       Ratelimit-Reset:
-      - '2112621'
+      - '2106110'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 32e367c0-e37b-11ed-93f2-f58bd665ccb0
+      - 5bcc48a0-e38a-11ed-93f2-f58bd665ccb0
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -105,7 +105,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDEzNDQ5MV0sImRpc3RhbmNlIjpbMCwyNTk3LjE0MDJdLCJsb2NhdGlvbnMiOlt7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJTYW4gRGllZ28iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiU2FuIERpZWdvIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiQ0EiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjMyLjcxNTY4LCJsbmciOi0xMTcuMTYxNzF9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzIuNzE1NjgsImxuZyI6LTExNy4xNjE3MX0sIm1hcFVybCI6IiJ9LHsic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkJ1ZmZhbG8iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiRXJpZSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6Ik5ZIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0Ijo0Mi44ODU0NSwibG5nIjotNzguODc4NDZ9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDIuODg1NDUsImxuZyI6LTc4Ljg3ODQ2fSwibWFwVXJsIjoiIn1dfQ==
-  recorded_at: Tue, 25 Apr 2023 15:09:39 GMT
+  recorded_at: Tue, 25 Apr 2023 16:58:10 GMT
 - request:
     method: post
     uri: https://www.mapquestapi.com/directions/v2/routeMatrix?key=mapquest_api_key
@@ -127,7 +127,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:09:40 GMT
+      - Tue, 25 Apr 2023 16:58:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -137,17 +137,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '14643'
+      - '14368'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '14643'
+      - '14368'
       Ratelimit-Reset:
-      - '2112620'
+      - '2106109'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - 3356ea10-e37b-11ed-93f2-f58bd665ccb0
+      - 5c44d400-e38a-11ed-93f2-f58bd665ccb0
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -158,60 +158,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDEzNDQ5MV0sImRpc3RhbmNlIjpbMCwyNTk3LjE0MDJdLCJsb2NhdGlvbnMiOlt7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJTYW4gRGllZ28iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiU2FuIERpZWdvIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiQ0EiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjMyLjcxNTY4LCJsbmciOi0xMTcuMTYxNzF9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzIuNzE1NjgsImxuZyI6LTExNy4xNjE3MX0sIm1hcFVybCI6IiJ9LHsic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkJ1ZmZhbG8iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiRXJpZSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6Ik5ZIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0Ijo0Mi44ODU0NSwibG5nIjotNzguODc4NDZ9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDIuODg1NDUsImxuZyI6LTc4Ljg3ODQ2fSwibWFwVXJsIjoiIn1dfQ==
-  recorded_at: Tue, 25 Apr 2023 15:09:40 GMT
-- request:
-    method: post
-    uri: https://www.mapquestapi.com/directions/v2/routeMatrix?key=mapquest_api_key
-    body:
-      encoding: UTF-8
-      string: '{"locations":["San Diego, CA","Buffalo, NY"]}'
-    headers:
-      User-Agent:
-      - Faraday v2.7.4
-      Content-Type:
-      - application/json
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 25 Apr 2023 15:09:41 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '1228'
-      Connection:
-      - keep-alive
-      X-Ratelimit-Limit-2628000:
-      - '15000'
-      X-Ratelimit-Remaining-2628000:
-      - '14646'
-      Ratelimit-Limit:
-      - '15000'
-      Ratelimit-Remaining:
-      - '14646'
-      Ratelimit-Reset:
-      - '2112619'
-      X-Powered-By:
-      - MapQuest
-      X-Request-Id:
-      - 33ee6f20-e37b-11ed-b817-6d74f0015ecb
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Transaction-Count:
-      - all=3,geocoding=2,directions=1
-      Etag:
-      - W/"4cc-wGiOrxyLHuJrlqjbvDwblTqs8aw"
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMiBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIyIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sInRpbWUiOlswLDEzNDQ5MV0sImRpc3RhbmNlIjpbMCwyNTk3LjE0MDJdLCJsb2NhdGlvbnMiOlt7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJTYW4gRGllZ28iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiU2FuIERpZWdvIiwiYWRtaW5BcmVhNFR5cGUiOiJDb3VudHkiLCJhZG1pbkFyZWEzIjoiQ0EiLCJhZG1pbkFyZWEzVHlwZSI6IlN0YXRlIiwiYWRtaW5BcmVhMSI6IlVTIiwiYWRtaW5BcmVhMVR5cGUiOiJDb3VudHJ5IiwicG9zdGFsQ29kZSI6IiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkE1WEFYIiwiZ2VvY29kZVF1YWxpdHkiOiJDSVRZIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjMyLjcxNTY4LCJsbmciOi0xMTcuMTYxNzF9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzIuNzE1NjgsImxuZyI6LTExNy4xNjE3MX0sIm1hcFVybCI6IiJ9LHsic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkJ1ZmZhbG8iLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiRXJpZSIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6Ik5ZIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0Ijo0Mi44ODU0NSwibG5nIjotNzguODc4NDZ9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NDIuODg1NDUsImxuZyI6LTc4Ljg3ODQ2fSwibWFwVXJsIjoiIn1dfQ==
-  recorded_at: Tue, 25 Apr 2023 15:09:41 GMT
+  recorded_at: Tue, 25 Apr 2023 16:58:11 GMT
 - request:
     method: get
     uri: https://api.weatherapi.com/v1/forecast.json?alerts=no&aqi=no&days=5&key=weather_api_key&q=Buffalo,%20NY
@@ -231,7 +178,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 25 Apr 2023 15:09:41 GMT
+      - Tue, 25 Apr 2023 16:58:12 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -241,7 +188,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-1068
+      - BunnyCDN-IL1-1067
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -257,21 +204,21 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - 04/25/2023 15:09:41
+      - 04/25/2023 16:58:12
       Cdn-Edgestorageid:
       - '1070'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 97294a9d0c4492e691f1be8682f6f53e
+      - 5bfe4cd94689221df140744d032a44be
       Cdn-Cache:
       - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"Buffalo","region":"New York","country":"United
-        States of America","lat":42.89,"lon":-78.88,"tz_id":"America/New_York","localtime_epoch":1682435381,"localtime":"2023-04-25
-        11:09"},"current":{"last_updated_epoch":1682434800,"last_updated":"2023-04-25
-        11:00","temp_c":6.7,"temp_f":44.1,"is_day":1,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":11.9,"wind_kph":19.1,"wind_degree":230,"wind_dir":"SW","pressure_mb":1021.0,"pressure_in":30.16,"precip_mm":0.5,"precip_in":0.02,"humidity":65,"cloud":75,"feelslike_c":3.0,"feelslike_f":37.5,"vis_km":16.0,"vis_miles":9.0,"uv":2.0,"gust_mph":16.3,"gust_kph":26.3},"forecast":{"forecastday":[{"date":"2023-04-25","date_epoch":1682380800,"day":{"maxtemp_c":9.9,"maxtemp_f":49.8,"mintemp_c":0.8,"mintemp_f":33.4,"avgtemp_c":5.3,"avgtemp_f":41.6,"maxwind_mph":13.4,"maxwind_kph":21.6,"totalprecip_mm":3.1,"totalprecip_in":0.12,"totalsnow_cm":0.09,"avgvis_km":9.5,"avgvis_miles":5.0,"avghumidity":66.0,"daily_will_it_rain":1,"daily_chance_of_rain":88,"daily_will_it_snow":0,"daily_chance_of_snow":3,"condition":{"text":"Patchy
+        States of America","lat":42.89,"lon":-78.88,"tz_id":"America/New_York","localtime_epoch":1682441891,"localtime":"2023-04-25
+        12:58"},"current":{"last_updated_epoch":1682441100,"last_updated":"2023-04-25
+        12:45","temp_c":8.3,"temp_f":46.9,"is_day":1,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":17.4,"wind_kph":28.1,"wind_degree":240,"wind_dir":"WSW","pressure_mb":1022.0,"pressure_in":30.17,"precip_mm":0.2,"precip_in":0.01,"humidity":56,"cloud":50,"feelslike_c":5.1,"feelslike_f":41.2,"vis_km":16.0,"vis_miles":9.0,"uv":2.0,"gust_mph":16.3,"gust_kph":26.3},"forecast":{"forecastday":[{"date":"2023-04-25","date_epoch":1682380800,"day":{"maxtemp_c":9.9,"maxtemp_f":49.8,"mintemp_c":0.8,"mintemp_f":33.4,"avgtemp_c":5.3,"avgtemp_f":41.6,"maxwind_mph":13.4,"maxwind_kph":21.6,"totalprecip_mm":3.1,"totalprecip_in":0.12,"totalsnow_cm":0.09,"avgvis_km":9.5,"avgvis_miles":5.0,"avghumidity":66.0,"daily_will_it_rain":1,"daily_chance_of_rain":88,"daily_will_it_snow":0,"daily_chance_of_snow":3,"condition":{"text":"Patchy
         rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png","code":1063},"uv":2.0},"astro":{"sunrise":"06:18
         AM","sunset":"08:09 PM","moonrise":"09:49 AM","moonset":"01:25 AM","moon_phase":"Waxing
         Crescent","moon_illumination":"24"},"hour":[{"time_epoch":1682395200,"time":"2023-04-25
@@ -445,5 +392,5 @@ http_interactions:
         light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/263.png","code":1150},"wind_mph":15.0,"wind_kph":24.1,"wind_degree":162,"wind_dir":"SSE","pressure_mb":1011.0,"pressure_in":29.85,"precip_mm":0.1,"precip_in":0.0,"humidity":66,"cloud":54,"feelslike_c":8.9,"feelslike_f":48.0,"windchill_c":8.9,"windchill_f":48.0,"heatindex_c":11.4,"heatindex_f":52.5,"dewpoint_c":5.4,"dewpoint_f":41.7,"will_it_rain":0,"chance_of_rain":68,"will_it_snow":0,"chance_of_snow":0,"vis_km":8.3,"vis_miles":5.0,"gust_mph":21.3,"gust_kph":34.2,"uv":1.0},{"time_epoch":1682823600,"time":"2023-04-29
         23:00","temp_c":11.7,"temp_f":53.1,"is_day":0,"condition":{"text":"Patchy
         rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png","code":1063},"wind_mph":16.6,"wind_kph":26.6,"wind_degree":163,"wind_dir":"SSE","pressure_mb":1010.0,"pressure_in":29.84,"precip_mm":0.1,"precip_in":0.0,"humidity":66,"cloud":54,"feelslike_c":9.0,"feelslike_f":48.2,"windchill_c":9.0,"windchill_f":48.2,"heatindex_c":11.7,"heatindex_f":53.1,"dewpoint_c":5.6,"dewpoint_f":42.1,"will_it_rain":0,"chance_of_rain":63,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":23.3,"gust_kph":37.4,"uv":1.0}]}]}}'
-  recorded_at: Tue, 25 Apr 2023 15:09:41 GMT
+  recorded_at: Tue, 25 Apr 2023 16:58:12 GMT
 recorded_with: VCR 6.1.0
