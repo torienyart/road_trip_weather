@@ -18,4 +18,8 @@ class ErrorSerializer
   def self.user_not_found
     {errors: "User does not exist, please register"}
   end
+
+  def self.unauthorized
+    {errors: "Invalid API Key"}
+  end
 end
