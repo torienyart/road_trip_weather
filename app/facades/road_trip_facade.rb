@@ -4,6 +4,10 @@ class RoadTripFacade
     @end_city = params[:destination]
   end
 
+  def trip_info
+    TripInfoSerializer.trip_info_hash(@start_city, @end_city, formatted_travel_time, eta_weather_info)
+  end
+
   def travel_time
     response = MapService.travel_time(@start_city, @end_city)
     response[:time][1]

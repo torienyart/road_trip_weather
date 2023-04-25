@@ -5,7 +5,7 @@ describe RoadTripFacade do
     it "#trip_info" do
       params = {origin: "Cincinatti,OH", destination: "Chicago,IL", api_key: "t1h2i3s4_i5s6_l7e8g9i10t11", controller: "api/v0/road_trip", action: "create"}
 
-      VCR.use_cassette("chicago_road_trip") do
+      VCR.use_cassette("chicago_road_trip_info") do
         @facade = RoadTripFacade.new(params).trip_info
       end
 
