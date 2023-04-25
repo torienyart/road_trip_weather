@@ -10,6 +10,7 @@ class ForecastsFacade
       daily_weather: daily_weather(response),
       hourly_weather: hourly_weather(response)
     }
+    require 'pry'; binding.pry
     Forecast.new(info_hash)
   end
 

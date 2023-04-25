@@ -3,7 +3,6 @@ class Api::V0::RoadTripController < ApplicationController
     if User.find_by(api_key: params[:api_key])
       @facade = RoadTripFacade.new(params).trip_info
       render json: RoadTripSerializer.new(@facade), status: 200
-
     else
       render json: ErrorSerializer.unauthorized, status: 401
     end
