@@ -29,14 +29,14 @@ describe ForecastsFacade do
     describe "city_weather_serializer" do
       it "can create a current weather object" do
         VCR.use_cassette("geocoding_denver") do
-          @current_weather = ForecastsFacade.new({location: "denver, co"}).current_weather(fake_response[:current])
+          @current_weather = ForecastsFacade.new({location: "denver, co"}).current_weather(fake_response)
         end
         expect(@current_weather).to be_a CurrentWeather
       end
 
       it "can create daily weather objects" do
         VCR.use_cassette("geocoding_denver") do
-          @daily_weather = ForecastsFacade.new({location: "denver, co"}).daily_weather(fake_response[:forecast][:forecastday])
+          @daily_weather = ForecastsFacade.new({location: "denver, co"}).daily_weather(fake_response)
         end
         
         expect(@daily_weather).to be_a Array
@@ -46,7 +46,16 @@ describe ForecastsFacade do
 
       it "can create hourly weather objects" do
         VCR.use_cassette("geocoding_denver") do
-          @hourly_weather = ForecastsFacade.new({location: "denver, co"}).hourly_weather(fake_response[:forecast][:forecastday][0][:hour])
+          @hourly_weather = ForecastsFacade.new({location: "denver, co"}).hourly_weather(fake_response)
+        end
+        expect(@hourly_weather).to be_a Array
+        expect(@hourly_weather.count).to be 24
+        expect(@hourly_weather.first).to be_a HourWeather
+      end
+
+      it "can create another day's hourly weather objects" do
+        VCR.use_cassette("geocoding_denver") do
+          @hourly_weather = ForecastsFacade.new({location: "denver, co"}).another_day_hourly_weather(fake_response, 2)
         end
         expect(@hourly_weather).to be_a Array
         expect(@hourly_weather.count).to be 24
